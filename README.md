@@ -56,9 +56,7 @@ The API is served under `/api/v1` with simple `GET` and `POST` endpoints at `/ap
 {
     "status": 200,
     "message": "ok",
-    "data": {
-        // Data depending on the type of resource
-    }
+    "data": {}
 }
 ```
 
@@ -92,7 +90,6 @@ Response:
             "email": "...",
             "key": "..."
         },
-        // ...
     ]
 }
 ```
@@ -144,7 +141,6 @@ Response:
             "to": "...",
             "key": "..."
         },
-        // ...
     ]
 }
 ```
@@ -185,7 +181,6 @@ Response:
             "to": "...",
             "key": "..."
         },
-        // ...
     ]
 }
 ```
@@ -207,7 +202,6 @@ Response:
             "to": "...",
             "key": "..."
         },
-        // ...
     ]
 }
 ```
