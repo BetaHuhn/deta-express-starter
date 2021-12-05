@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node"
+    ],
+    "resolveJsonModule": true,
+    "composite": true
+  },
+  "exclude": [
+    "node_modules",
+  ],
+  "files": [
+    "src/**/*.ts",
+    "package.json"
+  ]
+}
