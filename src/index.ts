@@ -43,7 +43,7 @@ app.use((err: any, _req: express.Request, res: express.Response, next: express.N
 })
 
 // Start the server if file is directly run
-if (import.meta.url === `file://${ process.argv[1] }`) {
+if (require.main === module) {
 	try {
 		const PORT = process.env.PORT || 3000
 

@@ -1,3 +1,4 @@
-import app from './build/index.js'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const app = require('./build/index.js')
 
-export default app
+module.exports = app.default
