@@ -1,14 +1,13 @@
-name: Deploy to Deta (dev)
+name: Deploy to Deta
 
 on:
-  push:
-    branches:
-      - develop
+  release:
+    types: [created]
   workflow_dispatch:
 
 jobs:
-  deploy-dev:
-    name: Deploy
+  deploy:
+    name: Deploy to Deta Micros
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,5 +27,5 @@ jobs:
         with:
           # Deta access token https://docs.deta.sh/docs/cli/auth
           deta-access-token: ${{ secrets.DETA_ACCESS_TOKEN }}
-          deta-name: ${{ secrets.DETA_DEV_MICRO_NAME }}
+          deta-name: ${{ secrets.DETA_MICRO_NAME }}
           deta-project: ${{ secrets.DETA_PROJECT_NAME }}

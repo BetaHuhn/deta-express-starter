@@ -1,5 +1,0 @@
-frontend:
-- client/**/*
-
-server:
-- server/**/*
